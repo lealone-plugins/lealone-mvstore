@@ -5,8 +5,6 @@
  */
 package org.lealone.plugins.mvstore.test;
 
-import java.io.File;
-
 import org.junit.Test;
 import org.lealone.db.PluginManager;
 import org.lealone.plugins.mvstore.MVStorageEngine;
@@ -21,6 +19,7 @@ public class MVStorageEngineTest extends TestBase {
     @Test
     public void run() {
         Storage storage = getStorage(MVStorageEngine.NAME);
+        // storage.openMap("test", null).remove();
         testMap(storage);
         testAsyncMap(storage);
     }
@@ -62,8 +61,6 @@ public class MVStorageEngineTest extends TestBase {
         StorageEngine se = PluginManager.getPlugin(StorageEngine.class, name);
         StorageBuilder builder = se.getStorageBuilder();
         String dir = joinDirs(name);
-        if (!new File(dir).getAbsoluteFile().exists())
-            new File(dir).getAbsoluteFile().mkdirs();
         builder.storagePath(dir);
         Storage storage = builder.openStorage();
         return storage;
