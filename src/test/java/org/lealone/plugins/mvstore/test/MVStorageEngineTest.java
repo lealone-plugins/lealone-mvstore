@@ -64,7 +64,7 @@ public class MVStorageEngineTest extends TestBase {
         String dir = joinDirs(name);
         if (!new File(dir).getAbsoluteFile().exists())
             new File(dir).getAbsoluteFile().mkdirs();
-        builder.storagePath(dir + ".db");
+        builder.storagePath(dir);
         Storage storage = builder.openStorage();
         return storage;
     }

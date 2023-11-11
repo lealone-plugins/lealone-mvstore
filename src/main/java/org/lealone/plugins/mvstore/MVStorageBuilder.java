@@ -21,7 +21,7 @@ public class MVStorageBuilder extends StorageBuilder {
 
     @Override
     public StorageBuilder storagePath(String storagePath) {
-        builder.fileName(storagePath);
+        builder.fileName(storagePath + ".db");
         return super.storagePath(storagePath);
     }
 
