@@ -3,13 +3,13 @@
  * Licensed under the Server Side Public License, v 1.
  * Initial Developer: zhh
  */
-package org.lealone.plugins.mvstore;
+package com.lealone.plugins.mvstore;
 
 import java.nio.ByteBuffer;
 
 import org.h2.mvstore.WriteBuffer;
-import org.lealone.db.DataBuffer;
-import org.lealone.storage.type.StorageDataType;
+import com.lealone.db.DataBuffer;
+import com.lealone.storage.type.StorageDataType;
 
 public class MVDataType extends org.h2.mvstore.type.BasicDataType<Object> {
 

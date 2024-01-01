@@ -3,10 +3,10 @@
  * Licensed under the Server Side Public License, v 1.
  * Initial Developer: zhh
  */
-package org.lealone.plugins.mvstore;
+package com.lealone.plugins.mvstore;
 
 import org.h2.mvstore.Cursor;
-import org.lealone.storage.StorageMapCursor;
+import com.lealone.storage.StorageMapCursor;
 
 public class MVStorageMapCursor<K, V> implements StorageMapCursor<K, V> {
 

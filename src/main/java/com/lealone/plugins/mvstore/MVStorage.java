@@ -3,15 +3,15 @@
  * Licensed under the Server Side Public License, v 1.
  * Initial Developer: zhh
  */
-package org.lealone.plugins.mvstore;
+package com.lealone.plugins.mvstore;
 
 import java.util.Map;
 
 import org.h2.mvstore.MVMap;
 import org.h2.mvstore.MVStore;
-import org.lealone.storage.StorageBase;
-import org.lealone.storage.StorageMap;
-import org.lealone.storage.type.StorageDataType;
+import com.lealone.storage.StorageBase;
+import com.lealone.storage.StorageMap;
+import com.lealone.storage.type.StorageDataType;
 
 public class MVStorage extends StorageBase {
 

@@ -3,10 +3,10 @@
  * Licensed under the Server Side Public License, v 1.
  * Initial Developer: zhh
  */
-package org.lealone.plugins.mvstore;
+package com.lealone.plugins.mvstore;
 
 import org.h2.mvstore.MVStore;
-import org.lealone.storage.StorageBuilder;
+import com.lealone.storage.StorageBuilder;
 
 public class MVStorageBuilder extends StorageBuilder {
 

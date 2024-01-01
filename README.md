@@ -26,7 +26,7 @@ H2 数据库 MVStore 存储引擎插件
 
 ```sql
 create plugin mvstore
-  implement by 'org.lealone.plugins.mvstore.MVStorageEngine' 
+  implement by 'com.lealone.plugins.mvstore.MVStorageEngine' 
   class path 'E:\lealone\lealone-plugins\mvstore\target\lealone-mvstore-plugin-6.0.0.jar';
 ```
 
